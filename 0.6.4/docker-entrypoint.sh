@@ -92,4 +92,6 @@ if [ "$1" = 'vault' ]; then
     set -- gosu vault "$@"
 fi
 
+rsyslogd &
+
 exec "$@"
